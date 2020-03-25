@@ -1,0 +1,28 @@
+{
+  "name": "@cdxoo/dbscan",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npx mocha src/index.spec.js"
+  },
+  "author": "Jan Schwalbe",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1"
+  },
+  "dependencies": {},
+  "description": "cluster a dataset via DBSCAN",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdxOo/dbscan.git"
+  },
+  "keywords": [
+    "clustering",
+    "DBSCAN"
+  ],
+  "bugs": {
+    "url": "https://github.com/cdxOo/dbscan/issues"
+  },
+  "homepage": "https://github.com/cdxOo/dbscan#readme"
+}
