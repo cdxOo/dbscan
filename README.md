@@ -1,15 +1,15 @@
-# @cdxOo/dbscan
+# @cdxoo/dbscan
 
 Performs DBSCAN clustering for datasets.
 
 ## Installation
 
-    npm install --save @cdxOo/dbscan
+    npm install --save @cdxoo/dbscan
     
 ## Usage
 
 ```javascript
-const dbscan = require('@cdxOo/dbscan');
+const dbscan = require('@cdxoo/dbscan');
     
 let result = dbscan({
     dataset: [21,22,23,24, 27,28,29,30, 9001],
