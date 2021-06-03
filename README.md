@@ -1,6 +1,6 @@
 # @cdxoo/dbscan
 
-Performs DBSCAN clustering for datasets.
+Customizable DBSCAN clustering for arbirary datasets.
 
 ## Installation
 
@@ -11,13 +11,23 @@ Performs DBSCAN clustering for datasets.
 ```javascript
 const dbscan = require('@cdxoo/dbscan');
     
-let result = dbscan({
+let simpleResult = dbscan({
     dataset: [21,22,23,24, 27,28,29,30, 9001],
     epsilon: 1.01,
 });
 // => {
 //    clusters: [ [0,1,2,3], [4,5,6,7] ],
 //    noise: [ 8 ]
+//}
+
+let objectResult = dbscan({
+    dataset: [{ foo: 21 }, { foo: 22 }, { foo: 27 }, { foo: 28 }]
+    epsilon: 1.1,
+    distanceFunction: (a,b) => Math.abs(a.foo - b.foo)
+});
+// => {
+//    clusters: [ [0,1], [2,3] ],
+//    noise: []
 //}
 ```
 
