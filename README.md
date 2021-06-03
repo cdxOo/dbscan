@@ -21,7 +21,7 @@ let simpleResult = dbscan({
 //}
 
 let objectResult = dbscan({
-    dataset: [{ foo: 21 }, { foo: 22 }, { foo: 27 }, { foo: 28 }]
+    dataset: [{ foo: 21 }, { foo: 22 }, { foo: 27 }, { foo: 28 }],
     epsilon: 1.1,
     distanceFunction: (a,b) => Math.abs(a.foo - b.foo)
 });
