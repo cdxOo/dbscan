@@ -8,10 +8,9 @@
   "author": "Jan Schwalbe",
   "license": "MIT",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^7.1.1"
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0"
   },
-  "dependencies": {},
   "description": "cluster a dataset via DBSCAN",
   "repository": {
     "type": "git",
