@@ -17,8 +17,12 @@
     "url": "git+https://github.com/cdxOo/dbscan.git"
   },
   "keywords": [
+    "cluster",
     "clustering",
-    "DBSCAN"
+    "DBSCAN",
+    "density",
+    "density-based-clustering",
+    "statistics"
   ],
   "bugs": {
     "url": "https://github.com/cdxOo/dbscan/issues"
