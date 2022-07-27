@@ -10,11 +10,11 @@ module.exports = ({
     minimumPoints = minimumPoints || 2;
     distanceFunction = distanceFunction || ((a, b) => Math.abs(a - b));
 
-    var visitedIndices = {};
+    var visitedIndices = {},
         isVisited = (i) => ( visitedIndices[i] ),
         markVisited = (i) => { visitedIndices[i] = true };
 
-    var clusteredIndices = {};
+    var clusteredIndices = {},
         isClustered = (i) => ( clusteredIndices[i] ),
         markClustered = (i) => { clusteredIndices[i] = true };
 
