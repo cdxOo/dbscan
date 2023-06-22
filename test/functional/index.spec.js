@@ -1,5 +1,5 @@
 var expect = require('chai').expect,
-    dbscan = require('../src/');
+    dbscan = require('../../src/');
 
 describe('dbscan()', () => {
 
