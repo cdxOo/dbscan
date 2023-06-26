@@ -1,0 +1,9 @@
+git:
+  commitMessage: "chore(release): v${version}"
+  requireCommits: false
+github:
+  release: true
+  releaseName: "${version}"
+  draft: true
+npm:
+  release: true
