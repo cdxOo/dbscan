@@ -11,7 +11,7 @@ declare function DBSCAN<T = any>({
     minimumPoints?: number;
     distanceFunction?: (a: T, b: T) => number;
 }): {
-    clusters: number[];
+    clusters: number[][];
     noise: number[];
 };
 

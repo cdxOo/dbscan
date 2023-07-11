@@ -4,7 +4,7 @@ import dbscan from '@cdxoo/dbscan';
 
 assert.strictEqual(typeof dbscan, 'function');
 
-var default_args_out = dbscan({
+var default_args_out : { clusters: number[][], noise: number[] } = dbscan({
     dataset: [0.1, 0.2, 0.3,  9.1, 9.2, 9.3, 100.0 ]
 });
 assert.deepEqual(default_args_out, {
@@ -12,7 +12,7 @@ assert.deepEqual(default_args_out, {
     noise: [ 6 ]
 });
 
-var full_args_out = dbscan({
+var full_args_out : { clusters: number[][], noise: number[] } = dbscan({
     dataset: [
         { x: 0.1 }, { x: 0.2 }, { x: 0.3 }, 
         { x: 9.1 }, { x: 9.2 }, { x: 9.3 },
