@@ -8,6 +8,7 @@
     "test:dtslint": "npx dtslint --localTs node_modules/typescript/lib ./types",
     "test:functional": "npx mocha --config mocha.config.json test/functional",
     "test:module-interface": "npx mocha --config mocha.config.json test/module-interface/all-tests.spec.js",
+    "prepublishOnly": "npm test",
     "release:dry": "npx release-it --dry-run --no-npm",
     "release:beta": "release-it --preRelease=beta",
     "release": "release-it"
